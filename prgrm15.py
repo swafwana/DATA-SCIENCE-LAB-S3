@@ -1,9 +1,6 @@
 import numpy
 def translationMatrix(tx=0, ty=0, tz=0):
-return numpy.matrix([[1,0,0,tx],
-[0,1,0,ty],
-[0,0,1,tz],
-[0,0,0,1 ]])
+    return numpy.matrix([[1,0,0,tx],[0,1,0,ty],[0,0,1,tz],[0,0,0,1 ]])
 matrix=translationMatrix(1,1,1)
 print(matrix)
 
@@ -34,4 +31,3 @@ def rotationMatrixz(degree):
 matrix3=rotationMatrixz(30)
 print("Rotation about z axis")
 print(matrix3)
-
